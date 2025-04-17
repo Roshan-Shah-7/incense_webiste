@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./styles/boilder.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>VatSala: Incense</title>
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <header>
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="./index.html">VatSala Incense.</a>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About Us</a></li>
+                    <li><a href="./production.html" class="nav-link">Production Process</a></li>
+                    <li><a href="./typeOfincense.html" class="nav-link">Types of Incense</a></li>
+                    <li><a href="./rawMaterial.html" class="nav-link">Raw Materials</a></li>
+                    <li><a href="./products.html" class="nav-link">Products</a></li>
+                </ul>
+                <div class="hambuger-menu" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero section -->
+            <section class="section-wrapper hero-section">
+                <img src="./assets/flowers/flower1.svg" alt="Decorative flower" class="floating-leaf leaf-1"
+                    loading="lazy">
+                <img src="./assets/flowers/flower2.svg" alt="Decorative flower" class="floating-leaf leaf-2"
+                    loading="lazy">
+                <img src="./assets/flowers/flower3.svg" alt="Decorative flower" class="floating-leaf leaf-3"
+                    loading="lazy">
+                <img src="./assets/flowers/flower4.svg" alt="Decorative flower" class="floating-leaf leaf-4"
+                    loading="lazy">
+                <img src="./assets/flowers/flower5.svg" alt="Decorative flower" class="floating-leaf leaf-5"
+                    loading="lazy">
+                <img src="./assets/flowers/flower6.svg" alt="Decorative flower" class="floating-leaf leaf-6"
+                    loading="lazy">
+                <div class="hero-content">
+                    <h1>The Art of Incense Making</h1>
+                    <p>
+                        <span>
+                            Discover the ancient craft of incense production and its cultural significance
+                        </span>
+                        <br>
+                        For thousands of years, the art of creating incense has been practiced across cultures,
+                        combining aromatic natural ingredients to produce fragrant smoke that enriches spiritual
+                        practices, meditation, and daily life.
+                    </p>
+                </div>
+                <video src="./assets/videos/hero-video.mp4" autoplay loop muted></video>
+                <p class="hero-description">
+                    Incense is a natural material that gives off a pleasant scent when burned. It's used for things like
+                    creating a relaxing vibe, spiritual practices, aromatherapy, meditation, or ceremonies. Sometimes,
+                    it's just a way to freshen up space or keep bugs away.
+
+                    There are two main kinds of incense: one that needs an external heat source to release its fragrance
+                    (like charcoal or a burner) and another that you light directly with a flame. For the second type,
+                    you blow out the flame after lighting it, leaving a glowing tip that slowly releases scented smoke.
+                    This kind can come as a paste wrapped around a bamboo stick or shaped into sticks or cones.
+                </p>
+            </section>
+            <!-- Hero section end-->
+
+            <!-- History section -->
+            <section class="history-section">
+                <div class="section-wrapper">
+                    <h1>Historical Background</h1>
+                    <div class="history-intro">
+                        <p>Journey through time and discover the rich heritage of incense across civilizations. From
+                            ancient temples to modern meditation spaces, incense has played a pivotal role in human
+                            culture for millennia.</p>
+                        <div class="intro-decorative">
+                            <img src="./assets/flowers/flower7.svg" alt="Decorative flower" class="history-flower left"
+                                loading="lazy">
+                            <img src="./assets/flowers/flower8.svg" alt="Decorative flower" class="history-flower right"
+                                loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="era-markers">
+                        <div class="era-marker">
+                            <span class="era-date">3000-2000 BCE</span>
+                            <h4>Ancient Era</h4>
+                            <p>The dawn of incense in early civilizations</p>
+                        </div>
+                        <div class="era-marker">
+                            <span class="era-date">2000-1000 BCE</span>
+                            <h4>Classical Era</h4>
+                            <p>Refinement of techniques and trade routes</p>
+                        </div>
+                        <div class="era-marker">
+                            <span class="era-date">1000 BCE-500 CE</span>
+                            <h4>Golden Age</h4>
+                            <p>Peak of incense trade and cultural exchange</p>
+                        </div>
+                        <div class="era-marker">
+                            <span class="era-date">500-1500 CE</span>
+                            <h4>Medieval Era</h4>
+                            <p>Spread of traditions across Asia</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="date-stamp">Ancient Times</div>
+                                <h3>Ancient Origins</h3>
+                                <p>The word "incense" comes from the Latin word <em>incendere</em>, meaning "to burn."
+                                </p>
+                                <div class="timeline-icon">
+                                    <img src="./assets/incense/incense.svg" alt="Incense icon" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-spacer">
+                            <div class="quick-fact left">
+                                <span class="fact-icon">🔍</span>
+                                <p>Early incense burners were made from clay and decorated with intricate patterns</p>
+                            </div>
+                            <div class="decorative-smoke"></div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="date-stamp">3000 BCE</div>
+                                <h3>Ancient Egypt</h3>
+                                <p>Ancient Egyptians used beautifully arranged flowers and incense for both practical
+                                    and spiritual purposes. They burned incense to mask unpleasant smells and believed
+                                    it could ward off evil spirits. Archeologists discovered resin balls in ancient
+                                    Egyptian tombs at El Mahasna, and the oldest known incense burner dates back to
+                                    Egypt's 5th dynasty.</p>
+                                <div class="timeline-icon">
+                                    <img src="./assets/flowers/flower3.svg" alt="Egyptian flower" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-spacer">
+                            <div class="quick-fact right">
+                                <span class="fact-icon">💫</span>
+                                <p>Egyptians had over 50 different incense recipes recorded in ancient texts</p>
+                            </div>
+                            <div class="decorative-pattern egyptian"></div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="date-stamp">2500 BCE</div>
+                                <h3>Babylonian & Greco-Roman Era</h3>
+                                <p>The Babylonians burned incense while praying to their gods for guidance, and this
+                                    practice spread to Greece and Rome. In the Indus Valley, people began incorporating
+                                    underground plant parts into their incense.</p>
+                                <div class="timeline-icon">
+                                    <img src="./assets/flowers/flower4.svg" alt="Babylonian flower" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-spacer">
+                            <div class="quick-fact left">
+                                <span class="fact-icon">🌿</span>
+                                <p>Mesopotamians used cedar wood as a primary ingredient in their incense</p>
+                            </div>
+                            <div class="decorative-pattern babylonian"></div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="date-stamp">1500 BCE</div>
+                                <h3>Ancient India</h3>
+                                <p>The oldest written records about incense appear in the Vedas, particularly the
+                                    Atharvaveda and Rigveda. Incense was used for its fragrance and healing properties,
+                                    contributing to the early development of Ayurveda. It became integral to religious
+                                    rituals in both Hinduism and Buddhism.</p>
+                                <div class="timeline-icon">
+                                    <img src="./assets/flowers/flower5.svg" alt="Indian flower" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-spacer">
+                            <div class="quick-fact right">
+                                <span class="fact-icon">🕉️</span>
+                                <p>Sanskrit texts mention over 300 varieties of fragrant materials used in incense</p>
+                            </div>
+                            <div class="decorative-pattern indian"></div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="date-stamp">2000 BCE</div>
+                                <h3>Ancient China</h3>
+                                <p>Chinese incense use flourished during the Xia, Shang, and Zhou dynasties. They
+                                    crafted incense from herbs like cassia, cinnamon, styrax, and sandalwood. The
+                                    practice peaked during the Song dynasty, with dedicated buildings for incense
+                                    ceremonies.</p>
+                                <div class="timeline-icon">
+                                    <img src="./assets/flowers/flower6.svg" alt="Chinese flower" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="date-stamp">6th Century CE</div>
+                                <h3>Japan</h3>
+                                <p>Korean Buddhist monks introduced incense to Japan, using it in purification rituals.
+                                    During the Heian period, nobles enjoyed high-quality incense (Koh) as entertainment.
+                                    Samurai warriors scented their armor with incense, and by the Muromachi period, the
+                                    art of kōdō became popular among upper and middle classes.</p>
+                                <div class="timeline-icon">
+                                    <img src="./assets/flowers/flower7.svg" alt="Japanese flower" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cultural-impact">
+                        <h2>Cultural Impact & Traditions</h2>
+                        <div class="cultural-cards">
+                            <div class="culture-card">
+                                <div class="culture-icon">
+                                    <img src="./assets/flowers/flower1.svg" alt="Religious ceremonies" loading="lazy">
+                                </div>
+                                <h4>Religious Ceremonies</h4>
+                                <p>From ancient temples to modern worship, incense remains central to religious
+                                    practices worldwide.</p>
+                            </div>
+                            <div class="culture-card">
+                                <div class="culture-icon">
+                                    <img src="./assets/flowers/flower2.svg" alt="Meditation" loading="lazy">
+                                </div>
+                                <h4>Meditation & Mindfulness</h4>
+                                <p>The calming properties of incense have made it an essential tool for meditation and
+                                    spiritual practices.</p>
+                            </div>
+                            <div class="culture-card">
+                                <div class="culture-icon">
+                                    <img src="./assets/flowers/flower3.svg" alt="Traditional Medicine" loading="lazy">
+                                </div>
+                                <h4>Traditional Medicine</h4>
+                                <p>Many cultures incorporated incense into their healing practices, recognizing its
+                                    therapeutic benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="history-conclusion">
+                        <p>The story of incense is a testament to humanity's enduring connection with aromatic
+                            substances. From religious ceremonies to personal wellness, its significance continues to
+                            evolve while maintaining its timeless appeal.</p>
+                        <img src="./assets/flowers/flower9.svg" alt="Decorative flower" class="conclusion-flower"
+                            loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <!-- History section end -->
+
+            <!-- Types of Incense section -->
+            <section class="types-section">
+                <div class="section-wrapper">
+                    <h2>Types of Incense</h2>
+                    <p class="section-intro">Discover the diverse world of incense, each type carrying its own unique
+                        tradition and purpose.</p>
+
+                    <div class="types-container">
+                        <article class="type-card">
+                            <div class="type-image">
+                                <img src="./assets/home/incense-sticks.jpg" alt="Traditional Incense" loading="lazy">
+                            </div>
+                            <div class="type-content">
+                                <h3>Traditional Incense</h3>
+                                <p>Traditional incense represents centuries-old craftsmanship, typically made from
+                                    natural aromatic materials bound together. These sticks or coils are widely used in
+                                    religious ceremonies, meditation, and daily aromatherapy.</p>
+                                <ul class="type-features">
+                                    <li>Natural ingredients</li>
+                                    <li>Long-lasting fragrance</li>
+                                    <li>Various aromatic profiles</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="type-card">
+                            <div class="type-image">
+                                <img src="./assets/home/Buddhist Incense.webp" alt="Buddhist Incense" loading="lazy">
+                            </div>
+                            <div class="type-content">
+                                <h3>Buddhist Incense</h3>
+                                <p>Buddhist incense, known for its pure and subtle fragrances, plays a vital role in
+                                    temple ceremonies and meditation practices. These specially crafted sticks often
+                                    contain precious woods and resins chosen for their spiritual properties.</p>
+                                <ul class="type-features">
+                                    <li>Pure botanical ingredients</li>
+                                    <li>Subtle, refined scents</li>
+                                    <li>Traditional formulations</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="type-card">
+                            <div class="type-image">
+                                <img src="./assets/home/cone incense.jpg" alt="Cone Incense" loading="lazy">
+                            </div>
+                            <div class="type-content">
+                                <h3>Cone Incense</h3>
+                                <p>Cone incense offers a unique burning experience with its compact shape and
+                                    concentrated fragrance. Perfect for shorter sessions, these cones provide a strong
+                                    initial burst of scent that gradually mellows into a sustained aromatic presence.
+                                </p>
+                                <ul class="type-features">
+                                    <li>Concentrated fragrance</li>
+                                    <li>Ideal for small spaces</li>
+                                    <li>Modern interpretation</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Types of Incense section end -->
+
+            <!-- Benefits & Uses section -->
+            <section class="benefits-section">
+                <div class="section-wrapper">
+                    <h2>Benefits & Uses</h2>
+                    <p class="section-intro">Discover the therapeutic and practical applications of incense in modern
+                        life, from enhancing meditation to creating ambiance.</p>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-container">
+                            <div class="benefit-content">
+                                <h3>Mental Wellness</h3>
+                                <p>Natural incense has been used for millennia to promote relaxation, reduce stress, and
+                                    enhance mental clarity. The aromatic compounds in quality incense can help create a
+                                    calming atmosphere perfect for meditation and mindfulness practices.</p>
+
+                                <ul class="benefit-features">
+                                    <li>Stress Relief</li>
+                                    <li>Better Sleep</li>
+                                    <li>Enhanced Focus</li>
+                                    <li>Meditation Aid</li>
+                                </ul>
+                            </div>
+                            <div class="benefit-image">
+                                <img src="./assets/home/benefit&uses.jpg" alt="Mental Wellness Benefits" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="benefit-container reverse">
+                            <div class="benefit-content">
+                                <h3>Aromatherapy</h3>
+                                <p>Different incense blends offer unique therapeutic properties. From calming lavender
+                                    to energizing citrus, each fragrance is carefully crafted to provide specific
+                                    benefits for your well-being.</p>
+
+                                <ul class="benefit-features">
+                                    <li>Mood Enhancement</li>
+                                    <li>Energy Balance</li>
+                                    <li>Natural Healing</li>
+                                    <li>Air Purification</li>
+                                </ul>
+                            </div>
+                            <div class="benefit-image">
+                                <img src="./assets/home/Aromatherapy.jpg" alt="Aromatherapy Benefits" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="benefit-container">
+                            <div class="benefit-content">
+                                <h3>Spiritual Practice</h3>
+                                <p>Throughout history, incense has been an integral part of spiritual and religious
+                                    practices. Its sacred smoke creates an atmosphere conducive to prayer, meditation,
+                                    and spiritual connection.</p>
+
+                                <ul class="benefit-features">
+                                    <li>Sacred Rituals</li>
+                                    <li>Space Clearing</li>
+                                    <li>Mindful Practice</li>
+                                    <li>Divine Connection</li>
+                                </ul>
+                            </div>
+                            <div class="benefit-image">
+                                <img src="./assets/home/Spiritual Practice.jpg" alt="Spiritual Practice Benefits"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefits-tips">
+                        <h4>Tips for Maximum Benefits</h4>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <span class="tip-icon">🌿</span>
+                                <h5>Choose Natural</h5>
+                                <p>Select incense made from pure, natural ingredients for the best therapeutic effects.
+                                </p>
+                            </div>
+                            <div class="tip-card">
+                                <span class="tip-icon">🪟</span>
+                                <h5>Ventilation</h5>
+                                <p>Always burn incense in a well-ventilated space to enjoy its benefits safely.</p>
+                            </div>
+                            <div class="tip-card">
+                                <span class="tip-icon">⏰</span>
+                                <h5>Timing</h5>
+                                <p>Burn for short periods (15-30 minutes) to avoid overwhelming the space.</p>
+                            </div>
+                            <div class="tip-card">
+                                <span class="tip-icon">🏺</span>
+                                <h5>Proper Holder</h5>
+                                <p>Use appropriate incense holders to ensure safe and complete burning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Benefits & Uses section end -->
+
+            <!-- Production Process section -->
+            <section class="production-process-section">
+                <div class="section-wrapper">
+                    <h2>Incense Making Process</h2>
+                    <div class="section-intro">
+                        <p>Our incense production combines centuries-old traditions with modern quality standards. Each
+                            step is carefully executed to ensure the highest quality product.</p>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-content">
+                                <h3>Raw Material Selection</h3>
+                                <p>We carefully select premium natural ingredients including aromatic woods, herbs,
+                                    resins, and essential oils. Each component is tested for quality and authenticity to
+                                    ensure the finest end product.</p>
+                            </div>
+                            <div class="step-image">
+                                <div class="step-number">1</div>
+                                <img src="./assets/production/aromatic wood.jpg" alt="Selection of aromatic woods"
+                                    loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-content">
+                                <h3>Natural Herbs Processing</h3>
+                                <p>Our master craftsmen process carefully selected herbs using traditional methods. Each
+                                    herb is cleaned and prepared to preserve its natural aromatic properties.</p>
+                            </div>
+                            <div class="step-image">
+                                <div class="step-number">2</div>
+                                <img src="./assets/production/herbs.jpg" alt="Processing of natural herbs"
+                                    loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-content">
+                                <h3>Resin Preparation</h3>
+                                <p>Premium natural resins are carefully processed and mixed to create the perfect base.
+                                    These resins give our incense its distinctive character and ensure proper burning
+                                    properties.</p>
+                            </div>
+                            <div class="step-image">
+                                <div class="step-number">3</div>
+                                <img src="./assets/production/natural rsine.jpg" alt="Natural resin preparation"
+                                    loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-content">
+                                <h3>Natural Binding Process</h3>
+                                <p>We use traditional natural binders to perfectly blend all ingredients. This ensures
+                                    consistent burning and optimal fragrance release in the final product.</p>
+                            </div>
+                            <div class="step-image">
+                                <div class="step-number">4</div>
+                                <img src="./assets/production/Natural Binders.jpg" alt="Natural binding process"
+                                    loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-content">
+                                <h3>Final Product</h3>
+                                <p>After careful shaping and natural drying, each piece is inspected to ensure it meets
+                                    our high quality standards before being packaged for delivery.</p>
+                            </div>
+                            <div class="step-image">
+                                <div class="step-number">5</div>
+                                <img src="./assets/production/final product.jpg" alt="Final incense products"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-conclusion">
+                        <p>Each step in our production process is guided by centuries-old traditions while incorporating
+                            modern quality control standards to deliver exceptional incense products that delight the
+                            senses and elevate your space.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Production Process section end -->
+        </main>
+
+        <footer>
+            <button id="back-to-top" aria-label="Back to top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+            <div class="section-wrapper footer-content">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <h3>VatSala Incense.</h3>
+                        <p>Experience the art of traditional incense making, crafted with care and expertise.</p>
+                    </div>
+                    <div class="quick-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./production.html">Production Process</a></li>
+                            <li><a href="./typeOfincense.html">Types of Incense</a></li>
+                            <li><a href="./rawMaterial.html">Raw Materials</a></li>
+                            <li><a href="./products.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Contact Us</h4>
+                        <p>Email: info@vatsalaincense.com</p>
+                        <p>Phone: +977 9874637463</p>
+                        <p>Address: Kritipur, Kathmandu, Nepal</p>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 VatSala Incense. All rights reserved.</p>
+                    <img src="./assets/footer/rose.svg" alt="Decorative rose" class="footer-rose">
+                </div>
+            </div>
+        </footer>
+        <script src="./js/navbar.js"></script>
+        <script src="./js/home.js"></script>
+    </div>
+</body>
+
+</html>
