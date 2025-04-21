@@ -1004,16 +1004,44 @@
     border-radius: 1rem;
 }
 
-/* Type of Incense */
-.types-overview-section {
-    padding: 4rem 0;
-}
-
-.types-overview-section .section-intro {
+.section-intro {
     max-width: 800px;
     margin: 0 auto 4rem;
     text-align: center;
     position: relative;
+}
+
+.explore-btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.explore-btn-section a {
+    background: var(--color-accent);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.explore-btn-section:hover {
+    transform: translateY(-5px);
+}
+
+.explore-btn-section:hover a {
+    background: var(--color-accent-hover);
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+/* Type of Incense */
+.types-overview-section {
+    padding: 4rem 0;
 }
 
 .types-overview-section .overview-content .cards {
@@ -1050,23 +1078,6 @@
 .types-overview-section .overview-content .cards .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.types-overview-section .explore-type-incense {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.types-overview-section .explore-type-incense a {
-    background: var(--color-accent);
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: background 0.3s ease;
 }
 
 .types-overview-section .explore-type-incense a:hover {
@@ -1262,4 +1273,127 @@
     .tips-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+.production-overview-section {
+    padding: 4rem 0;
+}
+
+.production-overview-section .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+    position: relative;
+}
+
+.production-overview-section .cards::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+}
+
+.production-overview-section .cards .card {
+    margin-bottom: 5rem;
+    width: max-content;
+    max-width: 350px;
+    height: 180px;
+    padding: 2rem;
+    background: var(--color-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+    place-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.production-overview-section .cards .card:nth-child(1) {
+    margin-left: -15rem;
+    margin-top: 5rem;
+}
+
+.production-overview-section .cards .card:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 40%;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+}
+
+.production-overview-section .cards .card:nth-child(2) {
+    margin-left: -20rem;
+    margin-top: 5rem;
+}
+
+.production-overview-section .cards .card:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 40%;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+}
+
+.production-overview-section .cards .card:nth-child(3) {
+    margin-left: 20rem;
+}
+
+.production-overview-section .cards .card:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 40%;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+}
+
+.production-overview-section .cards .card:nth-child(4) {
+    margin-left: 10rem;
+}
+
+.production-overview-section .cards .card:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 40%;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+}
+
+.production-overview-section .cards .card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.production-overview-section .cards .card .produnction-card-flower {
+    position: absolute;
+    width: 3rem;
+    right: 0;
+    top: 2%;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.production-overview-section .cards .card:hover .produnction-card-flower {
+    rotate: 45deg;
+    opacity: 1;
 }
