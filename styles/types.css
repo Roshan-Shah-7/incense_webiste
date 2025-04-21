@@ -1,0 +1,263 @@
+/* Types of Incense section */
+.types-section {
+    padding: 6rem var(--container-padding);
+    background-image: url(../assets/incense/incense.svg);
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.types-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
+    z-index: 1;
+}
+
+.types-section .section-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.types-section h2 {
+    text-align: center;
+    color: var(--color-dusk);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 2rem;
+}
+
+.types-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--color-accent);
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    color: var(--color-earth);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.types-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.type-card {
+    display: flex;
+    gap: 3rem;
+    align-items: stretch;
+    background: var(--color-card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    max-height: 500px;
+}
+
+.type-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(139, 69, 19, 0.05), rgba(139, 69, 19, 0.02));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(139, 69, 19, 0.15);
+}
+
+.type-card:hover::before {
+    opacity: 1;
+}
+
+.type-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.type-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-width: 45%;
+}
+
+.type-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.type-card:hover .type-image img {
+    transform: scale(1.05);
+}
+
+.type-content {
+    flex: 1;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.type-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.8));
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.type-content h3 {
+    color: var(--color-dusk);
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.type-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.type-card:hover .type-content h3::after {
+    width: 100px;
+}
+
+.type-content p {
+    color: var(--color-earth);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.type-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.type-features li {
+    background: var(--color-background2);
+    color: var(--color-accent);
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.type-features li:hover {
+    background: var(--color-accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+}
+
+/* Decorative elements */
+.type-card::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/flowers/flower1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    transition: all 0.3s ease;
+}
+
+.type-card:hover::after {
+    transform: rotate(45deg);
+    opacity: 0.2;
+}
+
+@media (max-width: 992px) {
+    .type-card,
+    .type-card:nth-child(even) {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .type-image {
+        min-height: 300px;
+        min-width: 100%;
+    }
+
+    .type-content {
+        padding: 2rem;
+    }
+
+    .type-content h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .types-section {
+        background-size: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .type-image {
+        min-height: 250px;
+    }
+
+    .type-content {
+        padding: 1.5rem;
+    }
+
+    .type-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .type-content p {
+        font-size: 1rem;
+    }
+
+    .type-features li {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}

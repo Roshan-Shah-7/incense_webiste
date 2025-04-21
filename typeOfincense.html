@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="./styles/boilder.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/types.css">
     <title>VatSala: Incense</title>
 </head>
 
@@ -25,7 +29,6 @@
                     <li><a href="./about.html" class="nav-link">About Us</a></li>
                     <li><a href="./production.html" class="nav-link">Production Process</a></li>
                     <li><a href="#" class="nav-link active">Types of Incense</a></li>
-                    <li><a href="./rawMaterial.html" class="nav-link">Raw Materials</a></li>
                     <li><a href="./products.html" class="nav-link">Products</a></li>
                 </ul>
                 <div class="hambuger-menu" id="hamburger">
@@ -37,12 +40,118 @@
         </header>
 
         <main>
+            <!-- Types of Incense section -->
+            <section class="types-section">
+                <div class="section-wrapper">
+                    <h2>Types of Incense</h2>
+                    <p class="section-intro">Discover the diverse world of incense, each type carrying its own unique
+                        tradition and purpose.</p>
 
+                    <div class="types-container">
+                        <article class="type-card">
+                            <div class="type-image">
+                                <img src="./assets/home/incense-sticks.jpg" alt="Traditional Incense" loading="lazy">
+                            </div>
+                            <div class="type-content">
+                                <h3>Traditional Incense</h3>
+                                <p>Traditional incense represents centuries-old craftsmanship, typically made from
+                                    natural aromatic materials bound together. These sticks or coils are widely used in
+                                    religious ceremonies, meditation, and daily aromatherapy.</p>
+                                <ul class="type-features">
+                                    <li>Natural ingredients</li>
+                                    <li>Long-lasting fragrance</li>
+                                    <li>Various aromatic profiles</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="type-card">
+                            <div class="type-image">
+                                <img src="./assets/home/Buddhist Incense.webp" alt="Buddhist Incense" loading="lazy">
+                            </div>
+                            <div class="type-content">
+                                <h3>Buddhist Incense</h3>
+                                <p>Buddhist incense, known for its pure and subtle fragrances, plays a vital role in
+                                    temple ceremonies and meditation practices. These specially crafted sticks often
+                                    contain precious woods and resins chosen for their spiritual properties.</p>
+                                <ul class="type-features">
+                                    <li>Pure botanical ingredients</li>
+                                    <li>Subtle, refined scents</li>
+                                    <li>Traditional formulations</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="type-card">
+                            <div class="type-image">
+                                <img src="./assets/home/cone incense.jpg" alt="Cone Incense" loading="lazy">
+                            </div>
+                            <div class="type-content">
+                                <h3>Cone Incense</h3>
+                                <p>Cone incense offers a unique burning experience with its compact shape and
+                                    concentrated fragrance. Perfect for shorter sessions, these cones provide a strong
+                                    initial burst of scent that gradually mellows into a sustained aromatic presence.
+                                </p>
+                                <ul class="type-features">
+                                    <li>Concentrated fragrance</li>
+                                    <li>Ideal for small spaces</li>
+                                    <li>Modern interpretation</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Types of Incense section end -->
         </main>
+        <footer>
+            <button id="back-to-top" aria-label="Back to top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+            <div class="section-wrapper footer-content">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <h3>VatSala Incense.</h3>
+                        <p>Experience the art of traditional incense making, crafted with care and expertise.</p>
+                    </div>
+                    <div class="quick-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./production.html">Production Process</a></li>
+                            <li><a href="./typeOfincense.html">Types of Incense</a></li>
+                            <li><a href="./rawMaterial.html">Raw Materials</a></li>
+                            <li><a href="./products.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Contact Us</h4>
+                        <p>Email: info@vatsalaincense.com</p>
+                        <p>Phone: +977 9874637463</p>
+                        <p>Address: Kritipur, Kathmandu, Nepal</p>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 VatSala Incense. All rights reserved.</p>
+                    <img src="./assets/footer/rose.svg" alt="Decorative rose" class="footer-rose">
+                </div>
+            </div>
+        </footer>
     </div>
 
 </body>
 
 <script src="./js/navbar.js"></script>
+<script src="./js/home.js"></script>
 
 </html>
