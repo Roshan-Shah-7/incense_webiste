@@ -1,3 +1,4 @@
+/* Base Header Styles */
 header {
     position: fixed;
     top: 0;
@@ -6,10 +7,12 @@ header {
     background: var(--color-background);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: background 0.3s ease;
 }
 
 header nav {
     max-width: var(--site-max-width);
+    width: 100%;
     margin: 0 auto;
     padding: 1rem var(--container-padding);
     display: flex;
@@ -21,6 +24,7 @@ header nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--color-primary);
+    transition: color 0.3s ease;
 }
 
 header nav .logo a:hover {
@@ -32,12 +36,15 @@ header nav ul {
     gap: 2rem;
     margin: 0;
     padding: 0;
+    list-style: none;
+    transition: all 0.3s ease;
 }
 
 header nav ul li a {
     color: var(--color-primary);
+    font-size: 1.1rem;
+    text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 1.2rem;
 }
 
 header nav ul li a:hover,
@@ -49,6 +56,7 @@ header nav ul li a.active {
     display: block;
     cursor: pointer;
     padding: 0.5rem;
+    z-index: 1001;
 }
 
 .hambuger-menu span {
@@ -61,17 +69,18 @@ header nav ul li a.active {
     border-radius: 3px;
 }
 
+/* Small screens (phones) */
 @media (max-width: 768px) {
     header nav ul {
         position: absolute;
         top: 100%;
         left: 0;
-        right: 0;
+        width: 100%;
         background: var(--color-background);
         flex-direction: column;
+        align-items: center;
         padding: 1rem 0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     header nav ul.active {
@@ -87,7 +96,20 @@ header nav ul li a.active {
     }
 }
 
-@media (min-width: 769px) {
+/* Medium screens (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .hambuger-menu {
+        display: none;
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
     header nav ul {
         display: flex;
     }
